@@ -34,6 +34,7 @@ public class Player : MonoBehaviour {
 
         if (collision.tag == "ColorChanger")
         {
+            Debug.Log("Color change");
             SetRandomColor();
             Destroy(collision.gameObject);
             return;
